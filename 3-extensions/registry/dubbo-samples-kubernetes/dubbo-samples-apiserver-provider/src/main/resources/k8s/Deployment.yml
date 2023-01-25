@@ -32,7 +32,7 @@ spec:
       containers:
         - name: server
           image: aamingaa/dubbo-demo:dubbo-samples-apiserver-provider_0.0.1
-          imagePullPolicy: Always
+          imagePullPolicy: Never
           ports:
             - containerPort: 20880
 #          livenessProbe:
