@@ -19,6 +19,9 @@
 
 package org.apache.dubbo.samples.api;
 
+import org.apache.dubbo.config.annotation.DubboProvidedbBy;
+
+@DubboProvidedbBy(name = "dubbo-samples-xds-provider")
 public interface GreetingService {
 
     String sayHello(String name);
